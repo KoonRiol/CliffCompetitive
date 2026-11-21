@@ -1,0 +1,36 @@
+{
+  "weight": 1024,
+  "anvil_cost": 0,
+  "description": {
+    "text": "通常攻撃",
+    "color": "#5247e6",
+    "bold": false,
+    "italic": false,
+    "underlined": false,
+    "strikethrough": false,
+    "obfuscated": false
+  },
+  "effects": {
+    "minecraft:post_piercing_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "riol.assets:triggar/left_click/check"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:barrier"
+}

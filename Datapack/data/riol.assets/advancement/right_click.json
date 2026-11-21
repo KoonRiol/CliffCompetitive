@@ -1,0 +1,31 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "minecraft:custom_data": {
+                                        "riol_cc": {
+                                            "triggar": {
+                                                "right_click": true
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "riol.assets:triggar/right_click/check"
+    }
+}

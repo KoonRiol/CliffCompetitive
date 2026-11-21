@@ -1,0 +1,79 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:custom_data": {
+                "riol_cc": {
+                  "item": {
+                    "id": "000.Debug_stick",
+                    "normal_attack": {
+                      "_": 0
+                    }
+                  },
+                  "triggar": {
+                    "right_click": true
+                  }
+                }
+              },
+              "minecraft:enchantments": {
+                "riol.assets:left_click": 1
+              },
+              "minecraft:piercing_weapon": {
+                "deals_knockback": false
+              },
+              "minecraft:tooltip_display": {
+                "hidden_components": [
+                  "minecraft:enchantments"
+                ]
+              },
+              "minecraft:consumable": {
+                "consume_seconds": 10000,
+                "animation": "none"
+              },
+              "minecraft:lore": [
+                [
+                  {
+                    "keybind": "key.attack",
+                    "color": "gray",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  },
+                  {
+                    "text": "で通常攻撃"
+                  }
+                ]
+              ],
+              "minecraft:item_name": {
+                "text": "テスト棒",
+                "color": "white",
+                "shadow_color": 14905970,
+                "bold": false,
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              },
+              "minecraft:attack_range": {
+                "min_reach": 64,
+                "max_reach": 64,
+                "min_creative_reach": 64,
+                "max_creative_reach": 64,
+                "hitbox_margin": 0.0
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

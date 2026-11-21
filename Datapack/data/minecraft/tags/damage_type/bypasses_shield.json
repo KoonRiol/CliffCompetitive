@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#riol.cc:bypasses_all",
+    "riol.cc:sound",
+    "riol.cc:knockback"
+  ],
+  "replace": false
+}
