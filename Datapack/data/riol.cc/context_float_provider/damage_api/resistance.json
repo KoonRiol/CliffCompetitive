@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:mul",
+    "inputs": [
+        {
+            "type": "minecraft:storage",
+            "storage": "riol_api:",
+            "path": "Calc.A"
+        },
+        {
+            "type": "minecraft:add",
+            "inputs": [
+                {
+                    "type": "minecraft:constant",
+                    "value": 1.0
+                },
+                {
+                    "type": "minecraft:negate",
+                    "input": {
+                        "type": "minecraft:div",
+                        "left": {
+                            "type": "minecraft:min",
+                            "inputs": [
+                                {
+                                    "type": "minecraft:storage",
+                                    "storage": "riol_api:",
+                                    "path": "Calc.Resistance"
+                                },
+                                {
+                                    "type": "minecraft:constant",
+                                    "value": 5.0
+                                }
+                            ]
+                        },
+                        "right": {
+                            "type": "minecraft:constant",
+                            "value": 5.0
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

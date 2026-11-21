@@ -1,0 +1,16 @@
+{
+    "type":"minecraft:add",
+    "inputs":[{
+        "type":"minecraft:storage",
+        "storage":"riol_api:",
+        "path":"Calc.A"
+    },
+    {
+        "type":"minecraft:negate",
+        "input":{
+            "type":"minecraft:storage",
+            "storage":"riol_api:",
+            "path":"Calc.B"
+        }
+    }]
+}

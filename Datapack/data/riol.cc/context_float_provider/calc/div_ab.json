@@ -1,0 +1,13 @@
+{
+    "type":"minecraft:div",
+    "left":{
+        "type":"minecraft:storage",
+        "storage":"riol_api:",
+        "path":"Calc.A"
+    },
+    "right":{
+        "type":"minecraft:storage",
+        "storage":"riol_api:",
+        "path":"Calc.B"
+    }
+}

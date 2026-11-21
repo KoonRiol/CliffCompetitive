@@ -1,0 +1,9 @@
+{
+    "type":"minecraft:sqrt",
+    "input":{
+        "type":"minecraft:storage",
+        "storage":"riol_api:",
+        "path":"Calc.A"
+    }
+    
+}

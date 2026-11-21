@@ -1,0 +1,49 @@
+{
+    "type": "minecraft:mul",
+    "inputs": [
+        {
+            "type": "minecraft:storage",
+            "storage": "riol_api:",
+            "path": "Calc.A"
+        },
+        {
+            "type": "minecraft:add",
+            "inputs": [
+                {
+                    "type": "minecraft:constant",
+                    "value": 1.0
+                },
+                {
+                    "type": "minecraft:negate",
+                    "input": {
+                        "type": "minecraft:div",
+                        "left": {
+                            "type": "minecraft:min",
+                            "inputs": [
+                                {
+                                    "type": "minecraft:from_int",
+                                    "input": {
+                                        "type": "minecraft:score",
+                                        "score": "Temporary",
+                                        "target": {
+                                          "type": "minecraft:fixed",
+                                          "name": "$EPF"
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "minecraft:constant",
+                                    "value": 20.0
+                                }
+                            ]
+                        },
+                        "right": {
+                            "type": "minecraft:constant",
+                            "value": 25.0
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

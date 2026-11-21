@@ -1,0 +1,97 @@
+{
+    "type":"minecraft:mul",
+    "inputs":[
+        {
+            "type":"minecraft:storage",
+            "storage":"riol_api:",
+            "path":"Calc.Damage"
+        },
+        {
+            "type":"minecraft:add",
+            "inputs":[
+                {
+                    "type":"minecraft:constant",
+                    "value": 1.0
+                },
+                {
+                    "type":"minecraft:negate",
+                    "input":{
+                        "type":"minecraft:div",
+                        "left":{
+                            "type":"minecraft:min",
+                            "inputs":[
+                                {
+                                    "type":"minecraft:max",
+                                    "inputs":[
+                                        {
+                                            "type":"minecraft:div",
+                                            "left":{
+                                                "type":"minecraft:storage",
+                                                "storage":"riol_api:",
+                                                "path":"Calc.DefensePoints"
+                                            },
+                                            "right":{
+                                                "type":"minecraft:constant",
+                                                "value": 5.0
+                                            }
+                                        },
+                                        {
+                                            "type":"minecraft:add",
+                                            "inputs":[
+                                                {
+                                                    "type":"minecraft:storage",
+                                                    "storage":"riol_api:",
+                                                    "path":"Calc.DefensePoints"
+                                                },
+                                                {
+                                                    "type":"minecraft:negate",
+                                                    "input":{
+                                                        "type":"minecraft:div",
+                                                        "left":{
+                                                            "type":"minecraft:storage",
+                                                            "storage":"riol_api:",
+                                                            "path":"Calc.Damage"
+                                                        },
+                                                        "right":{
+                                                            "type":"minecraft:add",
+                                                            "inputs":[
+                                                                {
+                                                                    "type":"minecraft:div",
+                                                                    "left":{
+                                                                        "type":"minecraft:storage",
+                                                                        "storage":"riol_api:",
+                                                                        "path":"Calc.Toughness"
+                                                                    },
+                                                                    "right":{
+                                                                        "type":"minecraft:constant",
+                                                                        "value": 4.0
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type":"minecraft:constant",
+                                                                    "value": 2.0
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type":"minecraft:constant",
+                                    "value": 20.0
+                                }
+                            ]
+                        },
+                        "right":{
+                            "type":"minecraft:constant",
+                            "value": 25.0
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

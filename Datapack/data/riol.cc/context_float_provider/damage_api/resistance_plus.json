@@ -1,0 +1,13 @@
+{
+    "type":"minecraft:add",
+    "inputs":[{
+        "type":"minecraft:storage",
+        "storage":"riol_api:",
+        "path":"Calc.Resistance"
+    },
+    {
+        "type":"minecraft:constant",
+        "value": 1.0
+    }]
+    
+}

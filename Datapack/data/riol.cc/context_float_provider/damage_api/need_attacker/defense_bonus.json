@@ -1,0 +1,150 @@
+{
+    "type": "minecraft:mul",
+    "inputs": [
+        {
+            "type": "minecraft:max",
+            "inputs": [
+                {
+                    "type": "minecraft:add",
+                    "inputs": [
+                        {
+                            "type": "minecraft:storage",
+                            "storage": "riol_api:",
+                            "path": "Calc.DefensePoints"
+                        },
+                        {
+                            "type": "minecraft:storage",
+                            "storage": "oh_my_dat:",
+                            "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].CustomEffectsCache.takenDamage.needAttacker.defenseBoost.value.add"
+                        },
+                        {
+                            "type": "minecraft:storage",
+                            "storage": "oh_my_dat:",
+                            "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].CustomEffectsCache.takenDamage.noAttacker.defenseBoost.value.add"
+                        },
+                        {
+                            "type": "minecraft:negate",
+                            "input": {
+                                "type": "minecraft:storage",
+                                "storage": "oh_my_dat:",
+                                "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].CustomEffectsCache.takenDamage.needAttacker.defenseDown.value.add"
+                            }
+                        },
+                        {
+                            "type": "minecraft:negate",
+                            "input": {
+                                "type": "minecraft:storage",
+                                "storage": "oh_my_dat:",
+                                "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].CustomEffectsCache.takenDamage.noAttacker.defenseDown.value.add"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:constant",
+                    "value": 0.0
+                }
+            ]
+        },
+        {
+            "type": "minecraft:div",
+            "left": {
+                "type": "minecraft:add",
+                "inputs": [
+                    {
+                        "type": "minecraft:storage",
+                        "storage": "oh_my_dat:",
+                        "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].CustomEffectsCache.takenDamage.needAttacker.defenseBoost.value.mul"
+                    },
+                    {
+                        "type": "minecraft:storage",
+                        "storage": "oh_my_dat:",
+                        "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].CustomEffectsCache.takenDamage.noAttacker.defenseBoost.value.mul"
+                    },
+                    {
+                        "type": "minecraft:constant",
+                        "value": 100.0
+                    }
+                ]
+            },
+            "right": {
+                "type": "minecraft:constant",
+                "value": 100.0
+            }
+        },
+        {
+            "type": "minecraft:max",
+            "inputs": [
+                {
+                    "type": "minecraft:div",
+                    "left": {
+                        "type": "minecraft:add",
+                        "inputs": [
+                            {
+                                "type": "minecraft:negate",
+                                "input": {
+                                    "type": "minecraft:storage",
+                                    "storage": "oh_my_dat:",
+                                    "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].CustomEffectsCache.takenDamage.needAttacker.defenseDown.value.mul"
+                                }
+                            },
+                            {
+                                "type": "minecraft:negate",
+                                "input": {
+                                    "type": "minecraft:storage",
+                                    "storage": "oh_my_dat:",
+                                    "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].CustomEffectsCache.takenDamage.noAttacker.defenseDown.value.mul"
+                                }
+                            },
+                            {
+                                "type": "minecraft:constant",
+                                "value": 100.0
+                            }
+                        ]
+                    },
+                    "right": {
+                        "type": "minecraft:constant",
+                        "value": 100.0
+                    }
+                },
+                {
+                    "type": "minecraft:constant",
+                    "value": 0.0
+                }
+            ]
+        },
+        {
+            "type": "minecraft:add",
+            "inputs": [
+                {
+                    "type": "minecraft:constant",
+                    "value": 1.0
+                },
+                {
+                    "type": "minecraft:negate",
+                    "input": {
+                        "type": "minecraft:min",
+                        "inputs": [
+                            {
+                                "type": "minecraft:div",
+                                "left": {
+                                    "type": "minecraft:storage",
+                                    "storage": "riol_api:",
+                                    "path": "DamageAPI.Argument.DefenseBreak"
+                                },
+                                "right": {
+                                    "type": "minecraft:constant",
+                                    "value": 100.0
+                                }
+                            },
+                            {
+                                "type": "minecraft:constant",
+                                "value": 1.0
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type":"minecraft:mul",
+    "inputs":[{
+        "type":"minecraft:storage",
+        "storage":"riol_api:",
+        "path":"Calc.A"
+    },
+    {
+        "type":"minecraft:storage",
+        "storage":"riol_api:",
+        "path":"Calc.B"
+    }]
+}

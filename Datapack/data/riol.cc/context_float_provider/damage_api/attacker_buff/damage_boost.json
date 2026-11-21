@@ -1,0 +1,50 @@
+{
+    "type": "minecraft:max",
+    "inputs": [
+        {
+            "type": "minecraft:add",
+            "inputs": [
+                {
+                    "type": "minecraft:mul",
+                    "inputs": [
+                        {
+                            "type": "minecraft:storage",
+                            "storage": "riol_api:",
+                            "path": "DamageAPI.Argument.Damage"
+                        },
+                        {
+                            "type": "minecraft:div",
+                            "left": {
+                                "type": "minecraft:add",
+                                "inputs": [
+                                    {
+                                        "type": "minecraft:storage",
+                                        "storage": "riol_api:",
+                                        "path": "Calc.DamageBoost.OutputMul"
+                                    },
+                                    {
+                                        "type": "minecraft:constant",
+                                        "value": 100
+                                    }
+                                ]
+                            },
+                            "right": {
+                                "type": "minecraft:constant",
+                                "value": 100
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:storage",
+                    "storage": "riol_api:",
+                    "path": "Calc.DamageBoost.OutputAdd"
+                }
+            ]
+        },
+        {
+            "type": "minecraft:constant",
+            "value": 0
+        }
+    ]
+}

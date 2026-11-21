@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:mul",
+    "inputs": [
+        {
+            "type": "minecraft:storage",
+            "storage": "riol_api:",
+            "path": "Calc.A"
+        },
+        {
+            "type": "minecraft:div",
+            "left": {
+                "type": "minecraft:add",
+                "inputs": [
+                    {
+                        "type": "minecraft:storage",
+                        "storage": "oh_my_dat:",
+                        "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].CustomEffectsCache.takenDamage.noAttacker.receivedDamage.value.mul"
+                    },
+                    {
+                        "type": "minecraft:constant",
+                        "value": 100.0
+                    }
+                ]
+            },
+            "right": {
+                "type": "minecraft:constant",
+                "value": 100.0
+            }
+        }
+    ]
+}

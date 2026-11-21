@@ -1,0 +1,14 @@
+{
+    "type":"minecraft:pow",
+    "base":{
+        "type":"minecraft:storage",
+        "storage":"riol_api:",
+        "path":"Calc.A"
+    },
+    "exponent":{
+        "type":"minecraft:storage",
+        "storage":"riol_api:",
+        "path":"Calc.B"
+    }
+    
+}

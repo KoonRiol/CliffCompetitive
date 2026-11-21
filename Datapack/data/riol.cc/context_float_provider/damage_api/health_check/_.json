@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:max",
+    "inputs": [
+        {
+            "type": "minecraft:constant",
+            "value": 0.0
+        },
+        {
+            "type": "minecraft:sub",
+            "left": {
+                "type": "minecraft:add",
+                "inputs": [
+                    {
+                        "type": "minecraft:storage",
+                        "storage": "oh_my_dat:",
+                        "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].Cache.NBT.Health"
+                    },
+                    {
+                        "type": "minecraft:storage",
+                        "storage": "oh_my_dat:",
+                        "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].Cache.NBT.AbsorptionAmount"
+                    }
+                ]
+            },
+            "right": {
+                "type": "minecraft:storage",
+                "storage": "oh_my_dat:",
+                "path": "_[-4][-4][-4][-4][-4][-4][-4][-4].DamageAPI.Data[0].Damage"
+            }
+        }
+    ]
+}
