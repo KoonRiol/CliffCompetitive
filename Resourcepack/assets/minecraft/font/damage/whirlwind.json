@@ -1,0 +1,121 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/0.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "0"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/1.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "1"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/2.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "2"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/3.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "3"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/4.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "4"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/5.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "5"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/6.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "6"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/7.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "7"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/8.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "8"
+            ]
+        },
+                {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/9.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "9"
+            ]
+        },
+                {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/period.png",
+            "ascent": 6,
+            "height": 7,
+            "chars": [
+                "."
+            ]
+        },
+                {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/whirlwind_1.png",
+            "ascent": 1,
+            "height": 4,
+            "chars": [
+                "\u0B01"
+            ]
+        },
+                {
+            "type": "bitmap",
+            "file": "riol.cc:font/damage/num/whirlwind/whirlwind_2.png",
+            "ascent": 1,
+            "height": 4,
+            "chars": [
+                "\u0B02"
+            ]
+        }
+    ]
+}    
